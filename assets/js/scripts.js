@@ -80,12 +80,12 @@ class ValidateForm {
     let valid = true;
 
     if (field.value.length < 3 || field.value.length > 12) {
-      this.createError(field, 'O <strong>Usuário</strong> precisa conter de 3 a 12 caracteres no máximo');
+      this.createError(field, 'O <strong>Usuário</strong> deve conter de 3 a 12 caracteres no máximo');
       valid = false;
     }
 
     if (!userRegex.test(field.value)) {
-      this.createError(field, 'O <strong>Usuário</strong> precisa conter apenas letras e/ou números');
+      this.createError(field, 'O <strong>Usuário</strong> deve conter apenas letras e/ou números');
       valid = false;
     }
 
@@ -96,12 +96,12 @@ class ValidateForm {
     let valid = true;
 
     if (this.password.value !== this.repeatPassword.value) {
-      this.createError(this.password, 'Os campos <strong>Senha</strong> e <strong>Repetir Senha</strong> precisam ser iguais.')
+      this.createError(this.password, 'Os campos <strong>Senha</strong> e <strong>Repetir Senha</strong> devem ser iguais.')
       valid = false;
     }
 
     if (this.password.value.length < 6 || this.password.value.length > 12) {
-      this.createError(this.password, 'A <strong>Senha</strong> precisa conter de 6 a 12 caracteres no máximo');
+      this.createError(this.password, 'A <strong>Senha</strong> deve conter de 6 a 12 caracteres no máximo');
       valid = false;
     }
 
