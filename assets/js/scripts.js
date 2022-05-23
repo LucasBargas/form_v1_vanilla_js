@@ -80,7 +80,7 @@ class ValidateForm {
     let valid = true;
 
     if (field.value.length < 3 || field.value.length > 12) {
-      this.createError(field, 'O <strong>Usuário</strong> precisa conter de 3 a 12 caracteres no mínimo');
+      this.createError(field, 'O <strong>Usuário</strong> precisa conter de 3 a 12 caracteres no máximo');
       valid = false;
     }
 
@@ -101,7 +101,7 @@ class ValidateForm {
     }
 
     if (this.password.value.length < 6 || this.password.value.length > 12) {
-      this.createError(this.password, 'A <strong>Senha</strong> precisa conter de 6 a 12 caracteres no mínimo');
+      this.createError(this.password, 'A <strong>Senha</strong> precisa conter de 6 a 12 caracteres no máximo');
       valid = false;
     }
 
