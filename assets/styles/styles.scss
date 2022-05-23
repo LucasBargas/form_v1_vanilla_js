@@ -78,7 +78,8 @@ form {
     padding: 0 1rem;
 
     &:focus {
-      outline: 1px solid $primary-color;
+      border-color: $green-color;
+      box-shadow: 0px 0px 6px 0px $green-color;
     }
 
     &:not(:first-of-type) {
