@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/styles.min.css">
+  <title>Projetos Lucas Bargas - Formulário de Cadastro</title>
+</head>
+<body>
+  <section>
+    <div class="form-container">
+      <div>
+        <h1>Formulário de cadastro</h1>
+        <ul>
+          <li>Nenhum campo pode estar vazio</li>
+          <li>Usuário só poderá conter letras e/ou números</li>
+          <li>Usuário deverá ter entre 3 a 12 caracteres</li>
+          <li>Senha precisa ter entre 6 a 12 caracteres</li>
+        </ul>
+      
+        <form action="/" method="POST" class='form'>
+          <input type="text" class="name validate" placeholder="Primeiro Nome">
+          <input type="text" class="second-name validate" placeholder="Sobrenome">
+          <input type="text" class="email validate" placeholder="Email">
+          <input type="text" class="user validate" placeholder="Usuário">
+          <input type="password" class="password validate" placeholder="Senha">
+          <input type="password" class="repeat-password validate" placeholder="Repetir Senha">
+          <label class="show-password">
+            <input  type="checkbox" name="" id="">
+            Exbir Senhas
+          </label>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
