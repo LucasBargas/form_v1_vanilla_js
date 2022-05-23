@@ -3,8 +3,8 @@ class ValidateForm {
     this.form = document.querySelector('.form');
     this.password = this.form.querySelector('.password');
     this.repeatPassword = this.form.querySelector('.repeat-password');
-    this.events();
     this.user = this.form.querySelector('.name').focus();
+    this.events();
   }
 
   events() {
@@ -13,18 +13,12 @@ class ValidateForm {
     })
 
     document.querySelector('.show-password input').addEventListener('click', () => {
-      console.log(this.password.type);
-      console.log(this.repeatPassword.type);
-
-      if (this.password.type === 'password') {
+      if (this.password.type === 'password' && this.repeatPassword.type === 'password') {
         this.password.type = 'text';
-      } else if (this.password.type === 'text') {
-        this.password.type = 'password';
-      }
-
-      if (this.repeatPassword.type === 'password') {
         this.repeatPassword.type = 'text';
-      } else if (this.repeatPassword.type === 'text') {
+
+      } else if (this.password.type === 'text' && this.repeatPassword.type === 'text') {
+        this.password.type = 'password';
         this.repeatPassword.type = 'password';
       }
     })
