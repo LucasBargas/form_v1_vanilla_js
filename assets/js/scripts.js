@@ -30,7 +30,9 @@ class ValidateForm {
     const validPasswords = this.passwordsAreaValid();
 
     if (validFields && validPasswords) {
-      alert('Formulário enviado com sucesso!');
+      setTimeout(() => {
+        alert('Formulário enviado com sucesso!');
+      }, 600);
     }
   }
 
