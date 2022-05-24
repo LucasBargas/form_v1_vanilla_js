@@ -70,7 +70,7 @@ class ValidateForm {
   }
 
   validUser(field) {
-    const userRegex = /^[a-zA-Z0-9]+$/g;
+    const userRegex = /^[A-Za-z0-9-]+$/;
     let valid = true;
 
     if (field.value.length < 3 || field.value.length > 12) {
